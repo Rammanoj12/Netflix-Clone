@@ -1,0 +1,282 @@
+
+*{
+    box-sizing: content-box;
+}
+body{
+  /* background-image:url("C:/Users/ram/OneDrive/Desktop/images/header-image.png");*/
+   background-color: black;
+  
+}
+.mainImage{
+    background-image:url("C:/Users/ram/OneDrive/Desktop/images/header-image.png");
+    background-size: cover;
+}
+.image{
+    height:90%;
+    width:50%;
+    max-width: 600px;
+    cursor: pointer;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   padding:10px;   
+} 
+button{
+    color:white;
+    background-color: rgb(240, 20, 20);
+    border-radius: 5px;
+    border:none;
+   cursor: pointer;
+    padding:8px 10px;
+    width: 60%;
+    font-weight:bold;
+  
+}
+.search{
+    display: flex;
+    flex-direction: row;
+   gap:20px;
+    align-items: flex-end;
+    }
+
+select{
+    padding:8px 10px;
+   background-color: black;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size:15px;
+    border:1px solid rgb(209, 204, 204);
+   
+}
+option{
+    font-weight: bold;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+   }
+.input{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:8px;
+}
+.input1{
+  width:40%;
+}
+
+.head{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font-size: 55px;
+}
+.para1,.para2{
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: none;
+}
+
+.secondContainer{
+    padding:110px;
+    margin:50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.searchBox{
+    width:25%;
+    border-color:  rgb(228, 220, 220);
+    font-weight: bold;
+    background-color: rgb(15, 14, 14);
+    color:white;
+    padding:20px;
+    opacity: 0.8;
+    border-radius: 3px;
+}
+.searchBox1{
+    width:50%;
+    border-color:  rgb(228, 220, 220);
+    font-weight: bold;
+    background-color: rgb(15, 14, 14);
+    color:white;
+    padding:15px;
+    opacity: 0.8;
+    border-radius: 3px;
+}
+
+.button{
+    color:white;
+    background-color: rgb(240, 20, 20);
+    border-radius: 5px;
+    border:none;
+  cursor: pointer;
+    width:15%;
+    padding:10px;
+    font-size:25px;
+  
+}
+.button1{
+    width:30%;
+    font-size:23px;
+    padding:15px;
+}
+
+.br{
+    background-color: rgb(83, 80, 80);
+    padding:4px;
+}
+
+.imageContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: black;
+    padding:10px;
+    margin: 110px;
+    gap:20px;
+}
+.two ,.four{
+    display: flex;
+    flex-direction: row-reverse;
+   
+}
+.para3{
+    font-size: 20px;
+    font-weight: none;
+    color:White;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.headContainer{
+   width:42%;
+   translate: -7px 80px;
+}
+.cardImage{
+    height:90%;
+    width:100%;
+    max-width: 600px;
+}
+
+.QuestionContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+    margin: 20px;   
+   
+}
+
+
+
+.cardContent{
+    /* background-color: rgb(82, 80, 80);  */
+    background: #303030; ;
+    padding: 0px 70px;
+}
+label:hover{
+    background-color:rgb(82, 80, 80);
+}
+.cardContainer{
+   margin:5px;
+    width:100%;
+    max-width:750px;
+}
+.cardContainer label{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 30px;
+    font-size:18px;
+    background: #303030;
+    font-weight: 500;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+label::after{
+    content:'+';
+    font-size: 35px;
+    position:absolute;
+    right:20px;
+    transition: transform 0.5s;
+
+}
+label:hover{
+    background:rgb(68, 67, 67);
+}
+
+input[type="radio"]{
+    display: none;
+}
+.cardContent{
+    background: #303030;
+    text-align: left;
+    padding:0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ,padding 0.5s ;
+}
+ .cardContainer input[type="radio"]:checked + label + .cardContent{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+
+.cardContainer input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+
+
+.footer{
+    padding:40px 10% 20px;
+    border-top:20px;
+   
+}
+.footer .small{
+    margin-bottom: 30px;
+    font-size: 15px;
+    gap:50px;
+}
+
+.footer .smallpassage{
+    margin-top: 30px;
+    font-size: 15px;
+    color:rgb(182, 182, 182);
+    font-size:15px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.footer .col {
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 30px;
+}
+
+.footer .col a{
+    display: block;
+    color:rgb(182, 182, 182);
+    font-weight: 400;
+    font-size: 15px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 15px;
+}
+.footer .row{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+span,.small{
+    color:rgb(182, 182, 182);
+    font-size:15px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    top:20px;
+}
